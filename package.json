@@ -1,0 +1,25 @@
+{
+  "name": "cypress-training-2023",
+  "version": "1.0.0",
+  "description": "This is a Workshop about Cypress 2023",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dennvm09/cypress-training-2023.git"
+  },
+  "keywords": [
+    "ui-testing",
+    "dojo",
+    "practice",
+    "cypress"
+  ],
+  "author": "Dennys Mosquera <valenmosquera1999@gmail.com> (dennvm09)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dennvm09/cypress-training-2023/issues"
+  },
+  "homepage": "https://github.com/dennvm09/cypress-training-2023#readme"
+}
