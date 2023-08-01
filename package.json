@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/dennvm09/cypress-training-2023#readme",
   "devDependencies": {
-    "cypress": "^12.17.2"
+    "cypress": "^12.17.2",
+    "typescript": "^5.1.6"
   }
 }
