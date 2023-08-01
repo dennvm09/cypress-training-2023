@@ -4,7 +4,8 @@
   "description": "This is a Workshop about Cypress 2023",
   "main": "index.js",
   "scripts": {
-    "test": "cypress open"
+    "test": "cypress open",
+    "test:open": "cypress open"
   },
   "repository": {
     "type": "git",
@@ -21,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/dennvm09/cypress-training-2023/issues"
   },
-  "homepage": "https://github.com/dennvm09/cypress-training-2023#readme"
+  "homepage": "https://github.com/dennvm09/cypress-training-2023#readme",
+  "devDependencies": {
+    "cypress": "^12.17.2"
+  }
 }
