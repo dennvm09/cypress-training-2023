@@ -3,7 +3,7 @@ class CheckoutCompletePage {
     private confirmationMsgLabel: string;
 
     constructor(){
-        this.confirmationMsgLabel = "#contents_wrapper > .checkout_complete_container > h2";
+        this.confirmationMsgLabel = ".complete-header";
     }
 
     public verifyConfirmationMsg(): void {
