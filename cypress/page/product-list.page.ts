@@ -2,7 +2,7 @@ class ProductListPage {
     private goToItemPageButton: string;
 
     constructor(){
-        this.goToItemPageButton = "#item_4_title_link > .inventory_item_name";
+        this.goToItemPageButton = "#item_1_title_link";
     }
 
     public goToItemPage(): void {
