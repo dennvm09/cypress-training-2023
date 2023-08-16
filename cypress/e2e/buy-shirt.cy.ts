@@ -14,11 +14,32 @@ const informationPage = new InformationPage();
 const overviewPage = new OverviewPage();
 const checkoutCompletePage = new CheckoutCompletePage();
 
+
+
 describe("Buy a black t-shirt", () => {
-    it("then the t-shirt should be bought", () => {
+    it("Login in Sauce Page with empty fields", () => {
+        //Arrange
         loginPage.visitLoginPage();
-        loginPage.signIn();
-        productListPage.goToItemPage();
+        //Action
+        loginPage.goToLoginButton();
+        //Assertion
+        loginPage.verifyErrorMessage("Epic sadface: Username is required");
+    });
+    it("Login in Sauce Page with valid credentials", () => {
+        //Arrange
+        loginPage.visitLoginPage();
+        loginPage.typeUsername("standard_user");
+        loginPage.typePassword("secret_sauce");
+        loginPage.goToLoginButton();
+        //Action
+        productListPage.displayContainer();
+        //Assertion
+        productListPage.verifyItemName("Sauce Labs Bolt T-Shirt");
+        productListPage.verifyItemPrice("$15.99");
+
+    });
+    ///
+    it("then the t-shirt should be bought", () => {
         itemPage.addToCart();
         itemPage.goToShoppingCartPage();
         shoppingCartPage.goToInformationPage();
